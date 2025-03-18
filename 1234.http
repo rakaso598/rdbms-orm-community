@@ -1,0 +1,53 @@
+## 회원가입
+
+POST http://localhost:7777/users/sign-up
+Content-Type: application/json
+
+{
+  "username":"test1234",
+  "password":"test1234"
+}
+
+### 로그인
+
+POST http://localhost:7777/users/log-in
+Content-Type: application/json
+
+{
+  "username":"test1234",
+  "password":"test1234"
+}
+
+### 글 작성하기
+
+POST http://localhost:7777/posts
+Content-Type: application/json
+Authorization: @cm8durkxq0000s16cog0tc5aq@
+
+{
+  "boardName": "general",
+  "title": "MBTI 이거 무조건 맞음",
+  "content": "INTJ랑 ENFP랑 잘 맞는다고 함"
+}
+
+### 댓글 남기기
+
+POST http://localhost:7777/comments
+Content-Type: application/json
+Authorization: @cm8durkxq0000s16cog0tc5aq@
+
+{
+  "postId": 5,
+  "content": "아님, 나 INTJ인데 ENFP랑 잘 안맞음"
+}
+
+### 글 조회하기 (댓글까지 포함해서 보여주도록)
+
+GET http://localhost:7777/posts/5
+Content-Type: application/json
+Authorization: @cm8durkxq0000s16cog0tc5aq@
+
+### 글 좋아요 누르기
+
+PUT http://localhost:7777/posts/5/like
+Authorization: @cm8durkxq0000s16cog0tc5aq@
