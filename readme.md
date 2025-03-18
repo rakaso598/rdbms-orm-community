@@ -1,4 +1,4 @@
-## 목표 : 유저테이블, 게시판테이블, 게시글테이블, 댓글테이블, 좋아요테이블이 있는 프리즈마 ORM을 활용한 PostgreSQL DB CRUD 기능 구현.
+## 목표 : 유저테이블, 게시판테이블, 게시글테이블, 댓글테이블, 좋아요테이블이 있는 프리즈마 ORM을 활용한 백엔드 PostgreSQL DB CRUD 기능 구현.
 
 ![image](https://github.com/user-attachments/assets/fa33d492-b5d8-4b5f-a0d9-6341ba771592)
 
